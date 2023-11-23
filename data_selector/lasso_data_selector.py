@@ -1,6 +1,15 @@
-import plotly.graph_objs as go
+""" LassoDataSelector class for interactive selection of data points in a plotly scatter plot. 
+    The selected data points are stored in a pandas DataFrame.
+    The confrimed data points are stored in a pandas DataFrame.
+    The confirmed data points can be accessed via the all_confirmed_data dictionnary.
+
+    Inspiration from: https://plotly.com/python/v3/selection-events/?_gl=1*1mrgxu1*_ga*MTg2MDIwODQ1Ny4xNzAwNjYwNzI0*_ga_6G7EE0JNSC*MTcwMDY2NTk1Ni4yLjEuMTcwMDY2NjExOS42MC4wLjA.
+"""
+
 import pandas as pd
-from ipywidgets import interactive, HBox, VBox, Button, Output
+import plotly.graph_objs as go
+from ipywidgets import Button, HBox, Output, VBox, interactive
+
 
 class LassoDataSelector:
     def __init__(self, df, fig_size=(800, 600), marker_size=10):
