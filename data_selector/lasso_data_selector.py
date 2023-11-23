@@ -9,7 +9,10 @@ class LassoDataSelector:
         self.marker_size = marker_size
         self.selected_data = pd.DataFrame()
         self.confirmed_data = pd.DataFrame()
+        self.all_confirmed_data = {}
+        self.confirmation_nr = 1
         self.output = Output()
+
 
     def _update_axes(self, xaxis, yaxis):
         self.scatter.x = self.df[xaxis]
@@ -37,6 +40,8 @@ class LassoDataSelector:
             with self.output:
                 print("Selection confirmed.")
                 self.confirmed_data = self.selected_data.copy()
+                self.all_confirmed_data[self.confirmation_nr] = self.confirmed_data
+                self.confirmation_nr += 1
                 print(self.confirmed_data)
 
 
