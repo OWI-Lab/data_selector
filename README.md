@@ -14,7 +14,7 @@ The `LassoDataSelector` is a feature of the `data_selector` package, providing a
 Install the `data_selector` package using pip:
 
 ```bash
-pip install data_selector
+pip install git+https://github.com/WEILMAX/data_selector.git
 ```
 
 ## Usage
