@@ -1,5 +1,6 @@
-import numpy as np
 import matplotlib.pyplot as plt
+import numpy as np
+
 
 def generate_noisy_sinusoidal(num_samples=10000, frequency=5, noise_level=0.5, x_end = 2 * np.pi):
     """

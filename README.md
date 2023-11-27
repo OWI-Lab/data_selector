@@ -1,5 +1,6 @@
 # data_selector
 Python package for selecting data manually on a scatter plot.
+
 Source: https://plotly.com/python/v3/selection-events/?_gl=1*1mrgxu1*_ga*MTg2MDIwODQ1Ny4xNzAwNjYwNzI0*_ga_6G7EE0JNSC*MTcwMDY2NTk1Ni4yLjEuMTcwMDY2NjExOS42MC4wLjA.
 
 
@@ -59,7 +60,8 @@ The `LassoDataSelector` class provides several attributes to access the data sel
 
 ## Example
 
-Below is a complete example demonstrating how to use the `LassoDataSelector` in your project:
+Below is a complete example demonstrating how to use the `LassoDataSelector` in your project
+(the notebooks folder contains this example with a synthetic dataset):
 
 ```python
 from data_selector.lasso_data_selector import LassoDataSelector
@@ -81,4 +83,37 @@ last_confirmed_data = selector.confirmed_data
 
 # All sets of data confirmed by the user over time
 all_confirmed_data = selector.all_confirmed_data
+```
 
+# DashLassoDataSelector Usage Guide
+A dash implementation exists when handling large datasets as this can be slow in plotly on the local computer
+
+## Example
+
+Below is a complete example demonstrating how to use the `DashLassoDataSelector` in your project
+(the notebooks folder contains this example with a synthetic dataset):
+
+```python
+from data_selector.dash_lasso_data_selector import DashLassoDataSelector
+import dash
+
+# Create a Dash app instance
+app = dash.Dash(__name__)
+
+# Create a DashLassoDataSelector instance and run it
+# Replace 'df' with your DataFrame
+dash_app = DashLassoDataSelector(df, app, fig_size=(1600, 600), marker_size=5,port=8000)
+dash_app.run()
+
+# After making a selection and clicking 'Confirm Selection',
+# you can access the selected data in various ways:
+
+# The data currently selected in the plot
+current_data = dash_app.selected_data
+
+# The last set of data confirmed by the user
+last_confirmed_data = dash_app.confirmed_data
+
+# All sets of data confirmed by the user over time
+all_confirmed_data = dash_app.all_confirmed_data
+```
