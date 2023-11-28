@@ -83,6 +83,9 @@ last_confirmed_data = selector.confirmed_data
 
 # All sets of data confirmed by the user over time
 all_confirmed_data = selector.all_confirmed_data
+
+#transform all selected data into one dataframe
+selected_data = pd.concat([selector.all_confirmed_data[i] for i in list(selector.all_confirmed_data.keys())])
 ```
 
 # DashLassoDataSelector Usage Guide
@@ -116,4 +119,7 @@ last_confirmed_data = dash_app.confirmed_data
 
 # All sets of data confirmed by the user over time
 all_confirmed_data = dash_app.all_confirmed_data
+
+#transform all selected data into one dataframe
+selected_data = pd.concat([dash_app.all_confirmed_data[i] for i in list(dash_app.all_confirmed_data.keys())])
 ```
