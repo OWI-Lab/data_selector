@@ -108,26 +108,26 @@ This figure shows the initial scatter plot from which data is selected.
 
 ### Example Figure 2: Activating Selection Lasso Tool
 
-![Activating Selection Lasso Tool](images/Lasso_select.png)
+![Activating Selection Lasso Tool](visualization/Lasso_select.png)
 
 This figure demonstrates how to activate the selection of data points using the lasso tool.
 
 ### Example Figure 3: Selection Using Lasso Tool
 
-![Selection Using Lasso Tool](images/Lasso_selet_data_selection.png)
+![Selection Using Lasso Tool](visualization/Lasso_selet_data_selection.png)
 
 This figure illustrates the process of selecting data points using the lasso tool.
 To perform a selection, press and hold the left mouse button while drawing around the desired data points.
 
 ### Example Figure 4: Confirm Data Selection
 
-![Confirm Data Selection](images/confirm_selection.png)
+![Confirm Data Selection](visualization/confirm_selection.png)
 
 Confirm selection of step 3.
 If you want to add more data, repeat steps 2-4 untill all desired data is selected and confirmed.
 
 ### Example Figure 5: Selected Data Illustration
 
-![Selected Data Illustration](images/selected_data.png)
+![Selected Data Illustration](visualization/selected_data.png)
 
 This figure shows the data points that have been selected through Steps 2-4.
