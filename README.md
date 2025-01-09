@@ -14,7 +14,7 @@ The `DashLassoDataSelector` is a feature of the `manual_data_selector` package, 
 Install the `manual_data_selector` package using pip:
 
 ```bash
-pip install git+https://github.com/WEILMAX/data_selector.git
+pip install manual_data_selector
 ```
 
 ## Usage
