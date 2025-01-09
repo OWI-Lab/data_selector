@@ -114,7 +114,7 @@ This figure demonstrates how to activate the selection of data points using the 
 
 ### Example Figure 3: Selection Using Lasso Tool
 
-![Selection Using Lasso Tool](visualization/Lasso_selet_data_selection.png)
+![Selection Using Lasso Tool](visualization/Lasso_select_data_selection.png)
 
 This figure illustrates the process of selecting data points using the lasso tool.
 To perform a selection, press and hold the left mouse button while drawing around the desired data points.
