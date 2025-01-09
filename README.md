@@ -1,17 +1,17 @@
-# data_selector
+# manual_data_selector
 Python package for selecting data manually on a scatter plot.
 
 Source: https://plotly.com/python/v3/selection-events/?_gl=1*1mrgxu1*_ga*MTg2MDIwODQ1Ny4xNzAwNjYwNzI0*_ga_6G7EE0JNSC*MTcwMDY2NTk1Ni4yLjEuMTcwMDY2NjExOS42MC4wLjA.
 
 
 
-# LassoDataSelector Usage Guide
+# DashLassoDataSelector Usage Guide
 
-The `LassoDataSelector` is a feature of the `data_selector` package, providing an interactive way to select data from a scatter plot using a lasso tool. This guide describes how to use the `LassoDataSelector` in your projects.
+The `DashLassoDataSelector` is a feature of the `manual_data_selector` package, providing an interactive way to select data from a scatter plot using a lasso tool. This guide describes how to use the `DashLassoDataSelector` in your projects.
 
 ## Installation
 
-Install the `data_selector` package using pip:
+Install the `manual_data_selector` package using pip:
 
 ```bash
 pip install git+https://github.com/WEILMAX/data_selector.git
@@ -24,10 +24,10 @@ Follow these steps to use the `DashLassoDataSelector`:
 
 1. **Import the Class:**
 
-   Import the `DashLassoDataSelector` class from the `data_selector` package.
+   Import the `DashLassoDataSelector` class from the `manual_data_selector` package.
 
    ```python
-   from data_selector.dash_lasso_data_selector import DashLassoDataSelector
+   from manual_data_selector.dash_lasso_data_selector import DashLassoDataSelector
    ```
 
 2. **Create an Instance:**
@@ -69,7 +69,7 @@ Below is a complete example demonstrating how to use the `DashLassoDataSelector`
 (the notebooks folder contains this example with a synthetic dataset):
 
 ```python
-from data_selector.dash_lasso_data_selector import DashLassoDataSelector
+from manual_data_selector.dash_lasso_data_selector import DashLassoDataSelector
 import dash
 
 # Create a Dash app instance
