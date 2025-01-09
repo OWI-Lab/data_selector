@@ -6,8 +6,8 @@
 import unittest
 from click.testing import CliRunner
 
-from data_selector import data_selector
-from data_selector import cli
+from manual_data_selector import data_selector
+from manual_data_selector import cli
 
 
 class TestData_selector(unittest.TestCase):
